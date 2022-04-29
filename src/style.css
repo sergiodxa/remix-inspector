@@ -1,0 +1,68 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #remix-inspector .disclosure-button {
+    @apply ri-p-4 ri-cursor-pointer ri-fixed ri-top-2 ri-right-2 ri-rounded-full ri-bg-slate-900 ri-shadow-lg;
+  }
+
+  #remix-inspector .icon-code {
+    @apply ri-w-5 ri-h-5 ri-text-slate-50;
+  }
+
+  #remix-inspector .icon-refresh {
+    @apply ri-w-4 ri-h-4 ri-animate-spin;
+  }
+
+  #remix-inspector .disclosure-panel {
+    @apply ri-sticky ri-bottom-0 ri-left-0 ri-z-50 hidderi-n ri-lg:block ri-bg-slate-900 ri-text-white ri-border-t ri-border-slate-600 ri-w-full;
+  }
+
+  #remix-inspector .disclosure-panel > section {
+    @apply ri-divide-y ri-divide-slate-600 ri-overflow-hidden;
+  }
+
+  #remix-inspector .disclosure-panel > section > div {
+    @apply ri-grid ri-grid-cols-2 ri-divide-x ri-divide-slate-600 ri-h-full;
+  }
+
+  #remix-inspector .routes-section {
+    @apply ri-divide-y ri-divide-slate-600 ri-min-h-[300px] ri-max-h-[50vh] ri-overflow-y-auto;
+  }
+
+  #remix-inspector .disclosure-panel h2 {
+    @apply ri-leading-5 ri-mr-auto;
+  }
+
+  #remix-inspector .disclosure-panel .refresh {
+    @apply ri-text-sm;
+  }
+
+  #remix-inspector .route-option {
+    @apply ri-w-full ri-text-left ri-py-2 ri-px-4;
+  }
+
+  #remix-inspector .route-option-active {
+    @apply ri-bg-slate-800;
+  }
+
+  #remix-inspector .route-details-section {
+    @apply ri-divide-y ri-divide-slate-600 ri-min-h-[300px] ri-max-h-[50vh] ri-overflow-y-auto;
+  }
+
+  #remix-inspector .route-details-section h2 {
+    @apply ri-leading-5;
+  }
+
+  #remix-inspector .table-key {
+    @apply ri-text-slate-300;
+  }
+
+  #remix-inspector .header {
+    @apply ri-bg-slate-800 ri-text-slate-50 ri-py-2 ri-px-3 ri-flex ri-items-center ri-space-x-3 ri-text-lg;
+  }
+
+  #remix-inspector .json-tree {
+    @apply ri-px-2;
+  }
+}
