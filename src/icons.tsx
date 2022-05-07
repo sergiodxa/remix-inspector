@@ -25,6 +25,7 @@ export function RefreshIcon(props: SVGProps<SVGSVGElement>) {
       className="h-5 w-5"
       viewBox="0 0 20 20"
       fill="currentColor"
+      {...props}
     >
       <path
         fillRule="evenodd"
